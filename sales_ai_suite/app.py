@@ -1,9 +1,9 @@
-import sys
-import os
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 import streamlit as st
 import pandas as pd
 from utils import clean_data
+from models import perform_customer_segmentation
+from pandasai import SmartDataframe
+from pandasai.llm import OpenAI
 from models import perform_customer_segmentation
 from pandasai import SmartDataframe
 from pandasai.llm import OpenAI
